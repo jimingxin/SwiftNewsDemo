@@ -19,12 +19,34 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = UIColor.globalBackgroundColor()
+        // 设置状态栏的属性
+        navigationController?.navigationBar.barStyle = .black
+        // 自定义导航栏
+        navigationItem.titleView = homeNavigationBar
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    fileprivate lazy var homeNavigationBar: HomeNavigationBar = {
+        let homeNavigationBar = HomeNavigationBar()
+        homeNavigationBar.searchBar.delegate = self
+        return homeNavigationBar
+    }()
+    
 
+}
+
+extension HomeViewController: UITextFieldDelegate {
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    
 }
