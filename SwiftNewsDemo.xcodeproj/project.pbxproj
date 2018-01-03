@@ -18,6 +18,9 @@
 		311C4C9A1FFCCE640015D2E3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C991FFCCE640015D2E3 /* VideoViewController.swift */; };
 		311C4C9C1FFCCE7F0015D2E3 /* WeiTouTiaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C9B1FFCCE7F0015D2E3 /* WeiTouTiaoViewController.swift */; };
 		311C4CA11FFCCEBA0015D2E3 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4CA01FFCCEBA0015D2E3 /* MineViewController.swift */; };
+		311C4CA61FFCDB0F0015D2E3 /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 311C4CA41FFCDB0E0015D2E3 /* default_theme.plist */; };
+		311C4CA71FFCDB0F0015D2E3 /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 311C4CA51FFCDB0F0015D2E3 /* night_theme.plist */; };
+		311C4CA91FFCDB280015D2E3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4CA81FFCDB280015D2E3 /* Const.swift */; };
 		86CBB056F8D320735D966E9D /* Pods_SwiftNewsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505051F7CF856CA854114CFA /* Pods_SwiftNewsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		311C4C991FFCCE640015D2E3 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		311C4C9B1FFCCE7F0015D2E3 /* WeiTouTiaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiTouTiaoViewController.swift; sourceTree = "<group>"; };
 		311C4CA01FFCCEBA0015D2E3 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		311C4CA41FFCDB0E0015D2E3 /* default_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = default_theme.plist; sourceTree = "<group>"; };
+		311C4CA51FFCDB0F0015D2E3 /* night_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = night_theme.plist; sourceTree = "<group>"; };
+		311C4CA81FFCDB280015D2E3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		4DE5CE0B632E43582F95743A /* Pods-SwiftNewsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNewsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNewsDemo/Pods-SwiftNewsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		505051F7CF856CA854114CFA /* Pods_SwiftNewsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNewsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7000793A0FDE44B52493A166 /* Pods-SwiftNewsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNewsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNewsDemo/Pods-SwiftNewsDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +93,9 @@
 		311C4C7F1FFCBB410015D2E3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				311C4CA31FFCDB0E0015D2E3 /* Theme */,
 				311C4C6A1FFCB2B00015D2E3 /* AppDelegate.swift */,
+				311C4CA81FFCDB280015D2E3 /* Const.swift */,
 				311C4C6E1FFCB2B00015D2E3 /* Main.storyboard */,
 				311C4C711FFCB2B00015D2E3 /* Assets.xcassets */,
 				311C4C731FFCB2B00015D2E3 /* LaunchScreen.storyboard */,
@@ -265,6 +273,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		311C4CA31FFCDB0E0015D2E3 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				311C4CA41FFCDB0E0015D2E3 /* default_theme.plist */,
+				311C4CA51FFCDB0F0015D2E3 /* night_theme.plist */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		58C02EDEF9B6FCF5415ECF5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +361,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311C4CA61FFCDB0F0015D2E3 /* default_theme.plist in Resources */,
+				311C4CA71FFCDB0F0015D2E3 /* night_theme.plist in Resources */,
 				311C4C751FFCB2B00015D2E3 /* LaunchScreen.storyboard in Resources */,
 				311C4C721FFCB2B00015D2E3 /* Assets.xcassets in Resources */,
 				311C4C701FFCB2B00015D2E3 /* Main.storyboard in Resources */,
@@ -443,6 +462,7 @@
 				311C4C891FFCCA540015D2E3 /* MyTabBarController.swift in Sources */,
 				311C4C6D1FFCB2B00015D2E3 /* ViewController.swift in Sources */,
 				311C4C6B1FFCB2B00015D2E3 /* AppDelegate.swift in Sources */,
+				311C4CA91FFCDB280015D2E3 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
