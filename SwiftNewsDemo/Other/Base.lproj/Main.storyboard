@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WQy-6R-Xta">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- 首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" 首页" id="vDO-aw-tBh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-160"/>
+        </scene>
+        <!--视频-->
+        <scene sceneID="tz2-Sy-e8y">
+            <objects>
+                <navigationController id="C6W-vd-M7n" customClass="MyNavigationController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="视频" image="video_tabbar_32x32_" selectedImage="video_tabbar_press_32x32_" id="edu-Ax-75g"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A5K-FZ-mgY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VcV-Dy-aV4" kind="relationship" relationship="rootViewController" id="Vms-yQ-kOC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odQ-a0-Jfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="503"/>
+        </scene>
+        <!--视频-->
+        <scene sceneID="fO4-UV-jHt">
+            <objects>
+                <viewController id="VcV-Dy-aV4" customClass="VideoViewController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nCJ-jr-w27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="X33-j6-jfO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="视频" id="VKO-9X-d5p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiQ-Ca-cFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="495.20239880059972"/>
+        </scene>
+        <!--Wei Tou Tiao View Controller-->
+        <scene sceneID="D8H-Gt-xsQ">
+            <objects>
+                <viewController id="ztb-Qi-TrS" customClass="WeiTouTiaoViewController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LoV-80-FbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="LRa-ED-wkG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7XY-Cd-qwS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJn-vq-uXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="1191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V8H-4D-AYu">
+            <objects>
+                <viewController id="Bl2-3G-m84" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2e1-rg-nGi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="oNJ-cI-ewJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CKV-Bo-uH6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nd-7t-LZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1382" y="1870"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="30I-v5-6qP">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WQy-6R-Xta" customClass="MyTabBarController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="REr-XF-Shb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dGu-kG-7MO" kind="relationship" relationship="viewControllers" id="eBm-jc-2CI"/>
+                        <segue destination="C6W-vd-M7n" kind="relationship" relationship="viewControllers" id="Keu-Nd-FhY"/>
+                        <segue destination="yXv-PK-hnH" kind="relationship" relationship="viewControllers" id="Ocf-Bh-x3R"/>
+                        <segue destination="5w0-Qf-vuO" kind="relationship" relationship="viewControllers" id="Lpq-Ji-Bdk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYJ-vj-tpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="842"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="1lL-1d-yzE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dGu-kG-7MO" customClass="MyNavigationController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home_tabbar_32x32_" selectedImage="home_tabbar_press_32x32_" id="Y9p-3K-KIt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UsH-Cc-bHG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d5y-C9-UZg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfZ-xV-qeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="-159"/>
+        </scene>
+        <!--微头条-->
+        <scene sceneID="f1L-Fd-hfn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXv-PK-hnH" customClass="MyNavigationController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="微头条" image="weitoutiao_tabbar_32x32_" selectedImage="weitoutiao_tabbar_press_32x32_" id="RtQ-nk-997"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aHs-nu-cgz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ztb-Qi-TrS" kind="relationship" relationship="rootViewController" id="cAN-C1-lTh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeI-7U-yaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="1191"/>
+        </scene>
+        <!--未登录-->
+        <scene sceneID="3hk-sT-LnU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5w0-Qf-vuO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="未登录" image="mine_tabbar_32x32_" selectedImage="mine_tabbar_press_32x32_" id="Ojz-BH-gjg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="coC-5y-oDV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bl2-3G-m84" kind="relationship" relationship="rootViewController" id="P7e-xc-3xM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1Q-M9-kz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="1870"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_tabbar_32x32_" width="32" height="32"/>
+        <image name="home_tabbar_press_32x32_" width="32" height="32"/>
+        <image name="mine_tabbar_32x32_" width="32" height="32"/>
+        <image name="mine_tabbar_press_32x32_" width="32" height="32"/>
+        <image name="video_tabbar_32x32_" width="32" height="32"/>
+        <image name="video_tabbar_press_32x32_" width="32" height="32"/>
+        <image name="weitoutiao_tabbar_32x32_" width="32" height="32"/>
+        <image name="weitoutiao_tabbar_press_32x32_" width="32" height="32"/>
+    </resources>
+</document>
