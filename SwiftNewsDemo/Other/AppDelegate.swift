@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// 设置主题颜色
         ThemeManager.setTheme(plistName: UserDefaults.standard.bool(forKey: isNight) ? "night_theme" : "default_theme", path: .mainBundle)
         
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let advertiseVC = AdvertiseViewController()
+        window?.rootViewController = advertiseVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

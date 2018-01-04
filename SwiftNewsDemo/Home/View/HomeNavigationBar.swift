@@ -62,4 +62,15 @@ class HomeNavigationBar: UIView {
             super.frame = newFrame
         }
     }
+        
+    // IOS 11 以后需要设置不然显示不正常
+    override var intrinsicContentSize: CGSize{
+    
+        return CGSize(width: screenWidth, height: 44);
+    
+    }
+    
+    
+    
+    
 }

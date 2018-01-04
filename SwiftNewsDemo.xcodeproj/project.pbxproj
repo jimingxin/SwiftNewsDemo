@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3111E5CC1FFDBD0C00109445 /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111E5CA1FFDBD0C00109445 /* AdvertiseViewController.swift */; };
+		3111E5CD1FFDBD0C00109445 /* AdvertiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3111E5CB1FFDBD0C00109445 /* AdvertiseViewController.xib */; };
+		3111E5D41FFE23D500109445 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111E5D31FFE23D500109445 /* MyTheme.swift */; };
 		311C4C6B1FFCB2B00015D2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C6A1FFCB2B00015D2E3 /* AppDelegate.swift */; };
 		311C4C6D1FFCB2B00015D2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C6C1FFCB2B00015D2E3 /* ViewController.swift */; };
 		311C4C701FFCB2B00015D2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311C4C6E1FFCB2B00015D2E3 /* Main.storyboard */; };
 		311C4C721FFCB2B00015D2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311C4C711FFCB2B00015D2E3 /* Assets.xcassets */; };
-		311C4C751FFCB2B00015D2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311C4C731FFCB2B00015D2E3 /* LaunchScreen.storyboard */; };
 		311C4C861FFCBB950015D2E3 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C851FFCBB950015D2E3 /* MyNavigationController.swift */; };
 		311C4C891FFCCA540015D2E3 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C881FFCCA540015D2E3 /* MyTabBarController.swift */; };
 		311C4C981FFCCE450015D2E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4C971FFCCE450015D2E3 /* HomeViewController.swift */; };
@@ -29,12 +31,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3111E5CA1FFDBD0C00109445 /* AdvertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseViewController.swift; sourceTree = "<group>"; };
+		3111E5CB1FFDBD0C00109445 /* AdvertiseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseViewController.xib; sourceTree = "<group>"; };
+		3111E5D31FFE23D500109445 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTheme.swift; sourceTree = "<group>"; };
 		311C4C671FFCB2B00015D2E3 /* SwiftNewsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNewsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311C4C6A1FFCB2B00015D2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		311C4C6C1FFCB2B00015D2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		311C4C6F1FFCB2B00015D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		311C4C711FFCB2B00015D2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		311C4C741FFCB2B00015D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311C4C761FFCB2B00015D2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		311C4C851FFCBB950015D2E3 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		311C4C881FFCCA540015D2E3 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -106,7 +110,6 @@
 				311C4CA81FFCDB280015D2E3 /* Const.swift */,
 				311C4C6E1FFCB2B00015D2E3 /* Main.storyboard */,
 				311C4C711FFCB2B00015D2E3 /* Assets.xcassets */,
-				311C4C731FFCB2B00015D2E3 /* LaunchScreen.storyboard */,
 				311C4C761FFCB2B00015D2E3 /* Info.plist */,
 			);
 			path = Other;
@@ -128,6 +131,8 @@
 			children = (
 				311C4C851FFCBB950015D2E3 /* MyNavigationController.swift */,
 				311C4C881FFCCA540015D2E3 /* MyTabBarController.swift */,
+				3111E5CA1FFDBD0C00109445 /* AdvertiseViewController.swift */,
+				3111E5CB1FFDBD0C00109445 /* AdvertiseViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,9 +170,9 @@
 		311C4C8D1FFCCD240015D2E3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				311C4C901FFCCD3A0015D2E3 /* Controller */,
 				688EF8C21FFD032B00BAA047 /* Model */,
 				688EF8C11FFD031A00BAA047 /* View */,
-				311C4C901FFCCD3A0015D2E3 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 		688EF8BE1FFD009400BAA047 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3111E5D31FFE23D500109445 /* MyTheme.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -373,9 +379,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3111E5CD1FFDBD0C00109445 /* AdvertiseViewController.xib in Resources */,
 				311C4CA61FFCDB0F0015D2E3 /* default_theme.plist in Resources */,
 				311C4CA71FFCDB0F0015D2E3 /* night_theme.plist in Resources */,
-				311C4C751FFCB2B00015D2E3 /* LaunchScreen.storyboard in Resources */,
 				311C4C721FFCB2B00015D2E3 /* Assets.xcassets in Resources */,
 				311C4C701FFCB2B00015D2E3 /* Main.storyboard in Resources */,
 			);
@@ -470,7 +476,9 @@
 				688EF8C81FFD094300BAA047 /* UIView+Extension.swift in Sources */,
 				311C4C9C1FFCCE7F0015D2E3 /* WeiTouTiaoViewController.swift in Sources */,
 				311C4C861FFCBB950015D2E3 /* MyNavigationController.swift in Sources */,
+				3111E5CC1FFDBD0C00109445 /* AdvertiseViewController.swift in Sources */,
 				311C4CA11FFCCEBA0015D2E3 /* MineViewController.swift in Sources */,
+				3111E5D41FFE23D500109445 /* MyTheme.swift in Sources */,
 				311C4C9A1FFCCE640015D2E3 /* VideoViewController.swift in Sources */,
 				311C4C891FFCCA540015D2E3 /* MyTabBarController.swift in Sources */,
 				311C4C6D1FFCB2B00015D2E3 /* ViewController.swift in Sources */,
@@ -491,14 +499,6 @@
 				311C4C6F1FFCB2B00015D2E3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		311C4C731FFCB2B00015D2E3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				311C4C741FFCB2B00015D2E3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -618,7 +618,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 794EC5997G;
+				DEVELOPMENT_TEAM = L6ECB5JRB2;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftNewsDemo/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -636,7 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 794EC5997G;
+				DEVELOPMENT_TEAM = L6ECB5JRB2;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftNewsDemo/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

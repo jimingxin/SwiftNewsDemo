@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdvertiseViewController" customModule="SwiftNewsDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="timeButton" destination="hiT-db-Yab" id="eek-aL-Elb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ads" translatesAutoresizingMaskIntoConstraints="NO" id="DnQ-hZ-9oi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiT-db-Yab">
+                    <rect key="frame" x="302" y="20" width="60" height="26"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="1Qt-vn-AxM"/>
+                        <constraint firstAttribute="height" constant="26" id="2pJ-rm-Afe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="2s 跳过">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DnQ-hZ-9oi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7sk-jg-jLS"/>
+                <constraint firstItem="hiT-db-Yab" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="9jl-eR-ko4"/>
+                <constraint firstAttribute="trailing" secondItem="DnQ-hZ-9oi" secondAttribute="trailing" id="IV2-va-y1A"/>
+                <constraint firstAttribute="trailing" secondItem="hiT-db-Yab" secondAttribute="trailing" constant="13" id="UXh-jV-5oW"/>
+                <constraint firstItem="DnQ-hZ-9oi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hNB-06-QjL"/>
+                <constraint firstAttribute="bottom" secondItem="DnQ-hZ-9oi" secondAttribute="bottom" id="ns8-iP-8Ip"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ads" width="1080" height="1920"/>
+    </resources>
+</document>

@@ -94,9 +94,10 @@
         <!--My Tab Bar Controller-->
         <scene sceneID="30I-v5-6qP">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WQy-6R-Xta" customClass="MyTabBarController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MyTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="WQy-6R-Xta" customClass="MyTabBarController" customModule="SwiftNewsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="REr-XF-Shb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
