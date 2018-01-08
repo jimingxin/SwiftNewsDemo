@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = advertiseVC
         window?.makeKeyAndVisible()
         
-        print("sss")
         return true
     }
 
