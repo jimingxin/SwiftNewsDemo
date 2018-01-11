@@ -23,6 +23,12 @@
 		311C4CA61FFCDB0F0015D2E3 /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 311C4CA41FFCDB0E0015D2E3 /* default_theme.plist */; };
 		311C4CA71FFCDB0F0015D2E3 /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 311C4CA51FFCDB0F0015D2E3 /* night_theme.plist */; };
 		311C4CA91FFCDB280015D2E3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C4CA81FFCDB280015D2E3 /* Const.swift */; };
+		31295A142007117F009C813D /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31295A132007117F009C813D /* HomePageView.swift */; };
+		31295A16200712DA009C813D /* HomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31295A15200712DA009C813D /* HomeTitleView.swift */; };
+		31295A1820072DDB009C813D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31295A1720072DDB009C813D /* Launch Screen.storyboard */; };
+		31295A1E20073E83009C813D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31295A1D20073E83009C813D /* HomeCollectionViewCell.swift */; };
+		31295A20200743E8009C813D /* ManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31295A1F200743E8009C813D /* ManagerTool.swift */; };
+		31295A22200744F1009C813D /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31295A21200744F1009C813D /* HomeCollectionViewCell.xib */; };
 		313E1DE3200457130047FF17 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1DE2200457130047FF17 /* NetworkTool.swift */; };
 		313E1DE5200458550047FF17 /* TopicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1DE4200458550047FF17 /* TopicTitle.swift */; };
 		313E1DE720045B950047FF17 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1DE620045B950047FF17 /* TopicViewController.swift */; };
@@ -62,6 +68,12 @@
 		311C4CA41FFCDB0E0015D2E3 /* default_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = default_theme.plist; sourceTree = "<group>"; };
 		311C4CA51FFCDB0F0015D2E3 /* night_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = night_theme.plist; sourceTree = "<group>"; };
 		311C4CA81FFCDB280015D2E3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		31295A132007117F009C813D /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		31295A15200712DA009C813D /* HomeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleView.swift; sourceTree = "<group>"; };
+		31295A1720072DDB009C813D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		31295A1D20073E83009C813D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		31295A1F200743E8009C813D /* ManagerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerTool.swift; sourceTree = "<group>"; };
+		31295A21200744F1009C813D /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		313E1DE2200457130047FF17 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		313E1DE4200458550047FF17 /* TopicTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTitle.swift; sourceTree = "<group>"; };
 		313E1DE620045B950047FF17 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +149,7 @@
 				311C4C6A1FFCB2B00015D2E3 /* AppDelegate.swift */,
 				311C4CA81FFCDB280015D2E3 /* Const.swift */,
 				311C4C6E1FFCB2B00015D2E3 /* Main.storyboard */,
+				31295A1720072DDB009C813D /* Launch Screen.storyboard */,
 				311C4C711FFCB2B00015D2E3 /* Assets.xcassets */,
 				311C4C761FFCB2B00015D2E3 /* Info.plist */,
 			);
@@ -327,6 +340,7 @@
 			children = (
 				313E1DE2200457130047FF17 /* NetworkTool.swift */,
 				3111E5D31FFE23D500109445 /* MyTheme.swift */,
+				31295A1F200743E8009C813D /* ManagerTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -336,6 +350,10 @@
 			children = (
 				688EF8C31FFD034B00BAA047 /* HomeNavigationBar.swift */,
 				688EF8C51FFD04CA00BAA047 /* HomeSearchBar.swift */,
+				31295A132007117F009C813D /* HomePageView.swift */,
+				31295A15200712DA009C813D /* HomeTitleView.swift */,
+				31295A1D20073E83009C813D /* HomeCollectionViewCell.swift */,
+				31295A21200744F1009C813D /* HomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,9 +441,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31295A1820072DDB009C813D /* Launch Screen.storyboard in Resources */,
 				3111E5CD1FFDBD0C00109445 /* AdvertiseViewController.xib in Resources */,
 				311C4CA61FFCDB0F0015D2E3 /* default_theme.plist in Resources */,
 				311C4CA71FFCDB0F0015D2E3 /* night_theme.plist in Resources */,
+				31295A22200744F1009C813D /* HomeCollectionViewCell.xib in Resources */,
 				311C4C721FFCB2B00015D2E3 /* Assets.xcassets in Resources */,
 				311C4C701FFCB2B00015D2E3 /* Main.storyboard in Resources */,
 			);
@@ -521,20 +541,24 @@
 				311C4C9C1FFCCE7F0015D2E3 /* WeiTouTiaoViewController.swift in Sources */,
 				3148967820061084002C2E82 /* NewsDetail.swift in Sources */,
 				313E1DF62004AAD60047FF17 /* WeiTouTiao.swift in Sources */,
+				31295A20200743E8009C813D /* ManagerTool.swift in Sources */,
 				311C4C861FFCBB950015D2E3 /* MyNavigationController.swift in Sources */,
 				313E1DE3200457130047FF17 /* NetworkTool.swift in Sources */,
 				3111E5CC1FFDBD0C00109445 /* AdvertiseViewController.swift in Sources */,
+				31295A1E20073E83009C813D /* HomeCollectionViewCell.swift in Sources */,
 				3148968A20061927002C2E82 /* NSData+CRC32.m in Sources */,
 				311C4CA11FFCCEBA0015D2E3 /* MineViewController.swift in Sources */,
 				3111E5D41FFE23D500109445 /* MyTheme.swift in Sources */,
 				313E1DE720045B950047FF17 /* TopicViewController.swift in Sources */,
 				3148967A20061103002C2E82 /* Date+Extension.swift in Sources */,
 				3148967C200613D0002C2E82 /* String+Extension.swift in Sources */,
+				31295A16200712DA009C813D /* HomeTitleView.swift in Sources */,
 				3148968420061818002C2E82 /* VideoTopicController.swift in Sources */,
 				3148967E2006167D002C2E82 /* TheyUse.swift in Sources */,
 				311C4C9A1FFCCE640015D2E3 /* VideoViewController.swift in Sources */,
 				31489682200617A2002C2E82 /* QuestionAnswer.swift in Sources */,
 				311C4C891FFCCA540015D2E3 /* MyTabBarController.swift in Sources */,
+				31295A142007117F009C813D /* HomePageView.swift in Sources */,
 				311C4C6D1FFCB2B00015D2E3 /* ViewController.swift in Sources */,
 				314896862006185B002C2E82 /* MineCellModel.swift in Sources */,
 				688EF8C41FFD034B00BAA047 /* HomeNavigationBar.swift in Sources */,
@@ -673,7 +697,6 @@
 			baseConfigurationReference = 7000793A0FDE44B52493A166 /* Pods-SwiftNewsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6ECB5JRB2;
@@ -694,7 +717,6 @@
 			baseConfigurationReference = 4DE5CE0B632E43582F95743A /* Pods-SwiftNewsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6ECB5JRB2;
