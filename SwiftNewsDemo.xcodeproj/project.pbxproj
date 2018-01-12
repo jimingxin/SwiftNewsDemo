@@ -33,6 +33,15 @@
 		313E1DE5200458550047FF17 /* TopicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1DE4200458550047FF17 /* TopicTitle.swift */; };
 		313E1DE720045B950047FF17 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1DE620045B950047FF17 /* TopicViewController.swift */; };
 		313E1DF62004AAD60047FF17 /* WeiTouTiao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313E1DF52004AAD60047FF17 /* WeiTouTiao.swift */; };
+		31456EAA200854C40035C18E /* ToutiaohaoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31456EA9200854C40035C18E /* ToutiaohaoHeaderView.swift */; };
+		31456EAD200861040035C18E /* VideoTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31456EAB200861040035C18E /* VideoTopicCell.swift */; };
+		31456EAE200861040035C18E /* VideoTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31456EAC200861040035C18E /* VideoTopicCell.xib */; };
+		31456EBE2008B6700035C18E /* ToutiaohaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31456EBC2008B6700035C18E /* ToutiaohaoCell.swift */; };
+		31456EBF2008B6700035C18E /* ToutiaohaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31456EBD2008B6700035C18E /* ToutiaohaoCell.xib */; };
+		31456EC22008B78F0035C18E /* HomeJokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31456EC02008B78F0035C18E /* HomeJokeCell.swift */; };
+		31456EC32008B78F0035C18E /* HomeJokeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31456EC12008B78F0035C18E /* HomeJokeCell.xib */; };
+		31456EC62008B9910035C18E /* HomeImageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31456EC42008B9910035C18E /* HomeImageTableCell.swift */; };
+		31456EC72008B9910035C18E /* HomeImageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31456EC52008B9910035C18E /* HomeImageTableCell.xib */; };
 		3148967820061084002C2E82 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148967720061084002C2E82 /* NewsDetail.swift */; };
 		3148967A20061103002C2E82 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148967920061103002C2E82 /* Date+Extension.swift */; };
 		3148967C200613D0002C2E82 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148967B200613D0002C2E82 /* String+Extension.swift */; };
@@ -78,6 +87,15 @@
 		313E1DE4200458550047FF17 /* TopicTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTitle.swift; sourceTree = "<group>"; };
 		313E1DE620045B950047FF17 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		313E1DF52004AAD60047FF17 /* WeiTouTiao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiTouTiao.swift; sourceTree = "<group>"; };
+		31456EA9200854C40035C18E /* ToutiaohaoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToutiaohaoHeaderView.swift; sourceTree = "<group>"; };
+		31456EAB200861040035C18E /* VideoTopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTopicCell.swift; sourceTree = "<group>"; };
+		31456EAC200861040035C18E /* VideoTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTopicCell.xib; sourceTree = "<group>"; };
+		31456EBC2008B6700035C18E /* ToutiaohaoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToutiaohaoCell.swift; sourceTree = "<group>"; };
+		31456EBD2008B6700035C18E /* ToutiaohaoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToutiaohaoCell.xib; sourceTree = "<group>"; };
+		31456EC02008B78F0035C18E /* HomeJokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeJokeCell.swift; sourceTree = "<group>"; };
+		31456EC12008B78F0035C18E /* HomeJokeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeJokeCell.xib; sourceTree = "<group>"; };
+		31456EC42008B9910035C18E /* HomeImageTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImageTableCell.swift; sourceTree = "<group>"; };
+		31456EC52008B9910035C18E /* HomeImageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeImageTableCell.xib; sourceTree = "<group>"; };
 		3148967720061084002C2E82 /* NewsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
 		3148967920061103002C2E82 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3148967B200613D0002C2E82 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -354,6 +372,15 @@
 				31295A15200712DA009C813D /* HomeTitleView.swift */,
 				31295A1D20073E83009C813D /* HomeCollectionViewCell.swift */,
 				31295A21200744F1009C813D /* HomeCollectionViewCell.xib */,
+				31456EA9200854C40035C18E /* ToutiaohaoHeaderView.swift */,
+				31456EAB200861040035C18E /* VideoTopicCell.swift */,
+				31456EAC200861040035C18E /* VideoTopicCell.xib */,
+				31456EBC2008B6700035C18E /* ToutiaohaoCell.swift */,
+				31456EBD2008B6700035C18E /* ToutiaohaoCell.xib */,
+				31456EC02008B78F0035C18E /* HomeJokeCell.swift */,
+				31456EC12008B78F0035C18E /* HomeJokeCell.xib */,
+				31456EC42008B9910035C18E /* HomeImageTableCell.swift */,
+				31456EC52008B9910035C18E /* HomeImageTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,8 +469,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				31295A1820072DDB009C813D /* Launch Screen.storyboard in Resources */,
+				31456EAE200861040035C18E /* VideoTopicCell.xib in Resources */,
 				3111E5CD1FFDBD0C00109445 /* AdvertiseViewController.xib in Resources */,
+				31456EC72008B9910035C18E /* HomeImageTableCell.xib in Resources */,
+				31456EC32008B78F0035C18E /* HomeJokeCell.xib in Resources */,
 				311C4CA61FFCDB0F0015D2E3 /* default_theme.plist in Resources */,
+				31456EBF2008B6700035C18E /* ToutiaohaoCell.xib in Resources */,
 				311C4CA71FFCDB0F0015D2E3 /* night_theme.plist in Resources */,
 				31295A22200744F1009C813D /* HomeCollectionViewCell.xib in Resources */,
 				311C4C721FFCB2B00015D2E3 /* Assets.xcassets in Resources */,
@@ -560,12 +591,17 @@
 				311C4C891FFCCA540015D2E3 /* MyTabBarController.swift in Sources */,
 				31295A142007117F009C813D /* HomePageView.swift in Sources */,
 				311C4C6D1FFCB2B00015D2E3 /* ViewController.swift in Sources */,
+				31456EC62008B9910035C18E /* HomeImageTableCell.swift in Sources */,
 				314896862006185B002C2E82 /* MineCellModel.swift in Sources */,
 				688EF8C41FFD034B00BAA047 /* HomeNavigationBar.swift in Sources */,
 				311C4C6B1FFCB2B00015D2E3 /* AppDelegate.swift in Sources */,
 				313E1DE5200458550047FF17 /* TopicTitle.swift in Sources */,
 				311C4CA91FFCDB280015D2E3 /* Const.swift in Sources */,
+				31456EBE2008B6700035C18E /* ToutiaohaoCell.swift in Sources */,
+				31456EAA200854C40035C18E /* ToutiaohaoHeaderView.swift in Sources */,
+				31456EC22008B78F0035C18E /* HomeJokeCell.swift in Sources */,
 				688EF8C61FFD04CA00BAA047 /* HomeSearchBar.swift in Sources */,
+				31456EAD200861040035C18E /* VideoTopicCell.swift in Sources */,
 				688EF8C01FFD00C700BAA047 /* UIColor+Extension.swift in Sources */,
 				314896802006172F002C2E82 /* ConcernToutiaohao.swift in Sources */,
 			);

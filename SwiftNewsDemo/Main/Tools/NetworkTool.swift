@@ -80,6 +80,7 @@ class NetworkTool: NetworkToolProtocal {
                       "aid": 13,
                       "iid": IID] as [String : AnyObject]
         
+        
         Alamofire.request(url, parameters: params).responseJSON { (response) in
             guard response.result.isSuccess else {
                 return

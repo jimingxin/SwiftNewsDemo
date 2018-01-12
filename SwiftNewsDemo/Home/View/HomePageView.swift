@@ -8,6 +8,7 @@
 
 import UIKit
 
+//协议中的class关键字用来限制该协议只能应用在类上
 protocol HomePageViewDelegate: class {
  
     func pageView(_ pageView : HomePageView, targetIndex: Int)

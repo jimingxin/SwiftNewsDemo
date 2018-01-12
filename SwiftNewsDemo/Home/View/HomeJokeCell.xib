@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="99" id="Emq-YI-WFK" customClass="HomeJokeCell" customModule="TodayNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Emq-YI-WFK" id="a0y-vt-Swn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exX-aX-NBh">
+                        <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6G-ov-fbd">
+                                <rect key="frame" x="15" y="0.0" width="35" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="顶" image="digup_video_20x20_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on8-v5-OIK">
+                                <rect key="frame" x="65" y="0.5" width="35" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="顶" image="digdown_video_20x20_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQE-VQ-ySg">
+                                <rect key="frame" x="115" y="0.0" width="49" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="评论" image="comment_video_20x20_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWI-15-uZn">
+                                <rect key="frame" x="220" y="0.0" width="40" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="mUK-IU-SfR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="love_video_20x20_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE5-UG-XZr">
+                                <rect key="frame" x="265" y="-0.5" width="40" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6se-hY-sua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="repost_video_20x20_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YQE-VQ-ySg" firstAttribute="leading" secondItem="on8-v5-OIK" secondAttribute="trailing" constant="15" id="4Cn-xJ-L9J"/>
+                            <constraint firstAttribute="bottom" secondItem="E6G-ov-fbd" secondAttribute="bottom" id="83k-vl-L9M"/>
+                            <constraint firstAttribute="bottom" secondItem="YQE-VQ-ySg" secondAttribute="bottom" id="B9U-fd-YWT"/>
+                            <constraint firstItem="YQE-VQ-ySg" firstAttribute="top" secondItem="exX-aX-NBh" secondAttribute="top" id="GA3-1l-kGr"/>
+                            <constraint firstItem="bWI-15-uZn" firstAttribute="top" secondItem="exX-aX-NBh" secondAttribute="top" id="JKq-pT-VbF"/>
+                            <constraint firstAttribute="bottom" secondItem="bWI-15-uZn" secondAttribute="bottom" id="OBr-P2-msY"/>
+                            <constraint firstAttribute="trailing" secondItem="NE5-UG-XZr" secondAttribute="trailing" constant="15" id="PgR-kV-pT1"/>
+                            <constraint firstItem="NE5-UG-XZr" firstAttribute="leading" secondItem="bWI-15-uZn" secondAttribute="trailing" constant="5" id="Q4K-Z7-Ww3"/>
+                            <constraint firstItem="on8-v5-OIK" firstAttribute="leading" secondItem="E6G-ov-fbd" secondAttribute="trailing" constant="15" id="Rc6-fr-NFL"/>
+                            <constraint firstAttribute="height" constant="44" id="Sjf-Ss-t2v"/>
+                            <constraint firstItem="E6G-ov-fbd" firstAttribute="leading" secondItem="exX-aX-NBh" secondAttribute="leading" constant="15" id="b3T-5j-xZB"/>
+                            <constraint firstAttribute="bottom" secondItem="on8-v5-OIK" secondAttribute="bottom" id="bAb-LH-5qZ"/>
+                            <constraint firstAttribute="bottom" secondItem="NE5-UG-XZr" secondAttribute="bottom" id="jL0-a6-2Pa"/>
+                            <constraint firstItem="on8-v5-OIK" firstAttribute="top" secondItem="exX-aX-NBh" secondAttribute="top" id="jLS-ZP-Pl1"/>
+                            <constraint firstItem="E6G-ov-fbd" firstAttribute="top" secondItem="exX-aX-NBh" secondAttribute="top" id="pV3-7Q-Oge"/>
+                            <constraint firstItem="NE5-UG-XZr" firstAttribute="top" secondItem="exX-aX-NBh" secondAttribute="top" id="zKv-Ns-YPj"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7z-bg-ZZt">
+                        <rect key="frame" x="15" y="15" width="290" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogs-Eh-jEN">
+                        <rect key="frame" x="0.0" y="88.5" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="tih-4C-Hd9"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1oS-8f-var">
+                        <rect key="frame" x="15" y="15" width="290" height="29.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I7z-bg-ZZt" firstAttribute="top" secondItem="a0y-vt-Swn" secondAttribute="top" constant="15" id="3lN-i7-g2L"/>
+                    <constraint firstItem="ogs-Eh-jEN" firstAttribute="leading" secondItem="a0y-vt-Swn" secondAttribute="leading" id="6EB-zf-PcR"/>
+                    <constraint firstAttribute="trailing" secondItem="exX-aX-NBh" secondAttribute="trailing" id="8Xh-Bv-V4z"/>
+                    <constraint firstAttribute="trailing" secondItem="1oS-8f-var" secondAttribute="trailing" constant="15" id="8sA-w1-62h"/>
+                    <constraint firstItem="I7z-bg-ZZt" firstAttribute="leading" secondItem="a0y-vt-Swn" secondAttribute="leading" constant="15" id="AwS-Me-mWo"/>
+                    <constraint firstAttribute="trailing" secondItem="I7z-bg-ZZt" secondAttribute="trailing" constant="15" id="MNX-GD-9g8"/>
+                    <constraint firstAttribute="bottom" secondItem="ogs-Eh-jEN" secondAttribute="bottom" id="Rx5-1b-Hqt"/>
+                    <constraint firstItem="exX-aX-NBh" firstAttribute="top" secondItem="1oS-8f-var" secondAttribute="bottom" id="WnC-tp-dF6"/>
+                    <constraint firstItem="ogs-Eh-jEN" firstAttribute="top" secondItem="exX-aX-NBh" secondAttribute="bottom" id="chi-VU-iAq"/>
+                    <constraint firstAttribute="trailing" secondItem="ogs-Eh-jEN" secondAttribute="trailing" id="eLu-mp-XiW"/>
+                    <constraint firstItem="1oS-8f-var" firstAttribute="leading" secondItem="a0y-vt-Swn" secondAttribute="leading" constant="15" id="fey-jG-MMi"/>
+                    <constraint firstItem="exX-aX-NBh" firstAttribute="leading" secondItem="a0y-vt-Swn" secondAttribute="leading" id="uDh-4O-526"/>
+                    <constraint firstItem="1oS-8f-var" firstAttribute="top" secondItem="I7z-bg-ZZt" secondAttribute="bottom" id="vbO-mh-xoe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentButton" destination="YQE-VQ-ySg" id="jUf-3m-gEU"/>
+                <outlet property="dislikeButton" destination="on8-v5-OIK" id="9uK-o5-D87"/>
+                <outlet property="girlImageView" destination="1oS-8f-var" id="UFf-Jc-Bif"/>
+                <outlet property="jokeLabel" destination="I7z-bg-ZZt" id="ZZh-zH-8fa"/>
+                <outlet property="likeButton" destination="E6G-ov-fbd" id="IMI-zi-Lu7"/>
+                <outlet property="shareButton" destination="NE5-UG-XZr" id="Vmu-gf-ymP"/>
+                <outlet property="starButton" destination="bWI-15-uZn" id="iXO-Vh-hdK"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="26.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment_video_20x20_" width="20" height="20"/>
+        <image name="digdown_video_20x20_" width="20" height="20"/>
+        <image name="digup_video_20x20_" width="20" height="20"/>
+        <image name="love_video_20x20_" width="20" height="20"/>
+        <image name="repost_video_20x20_" width="20" height="20"/>
+    </resources>
+</document>

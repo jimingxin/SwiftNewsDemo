@@ -15,4 +15,9 @@ struct ManagerTool {
         }
         return false
     }
+    
+    static func greet(person: String = "小明",age : Int) -> String {
+        
+        return person
+    }
 }
