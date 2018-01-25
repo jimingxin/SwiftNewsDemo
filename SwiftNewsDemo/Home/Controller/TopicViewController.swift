@@ -31,7 +31,16 @@ class TopicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupUI()
+        
+    
+        /// 设置上拉和下拉刷新
+        setRefresh()
+        
+        /// 设置通知监听 tabbar 点击
+        NotificationCenter.default.addObserver(self, selector: #selector(tabBarSelected), name: NSNotification.Name(rawValue: TabBarDidSelectedNotification), object: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +77,59 @@ extension TopicViewController: ToutiaohaoHeaderViewDelegate {
 //        navigationController?.pushViewController(ConcernToutiaohaoController(), animated: true)
     }
     
+}
+
+extension TopicViewController {
+    
+    // 设置 UI
+    fileprivate func setupUI() -> Void {
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.left.bottom.right.equalTo(view)
+            make.top.equalTo(view)
+        }
+    }
+    
+    // 设置下拉刷新
+    
+    @objc fileprivate func setRefresh() {
+        
+        
+        let header = MJRefreshHeader {
+            NetworkTool.loadHomeCategoryNewsFeed(category: self.topicTitle!.category!, completionHsndler: { (nowTime, newsTopics) in
+                self.tableView.mj_header.endRefreshing()
+                self.newsTopics = newsTopics
+                self.tableView.reloadData()
+            })
+        }
+        
+        
+        header?.isAutomaticallyChangeAlpha = true
+        tableView.mj_header = header
+        tableView.mj_header.beginRefreshing()
+        
+        tableView.mj_footer = MJRefreshBackNormalFooter(refreshingBlock: { [weak self] in
+            NetworkTool.loadHomeCategoryNewsFeed(category: self!.topicTitle!.category!) { (nowTime, newsTopics) in
+                self!.tableView.mj_footer.endRefreshing()
+                if newsTopics.count == 0 {
+                    SVProgressHUD.setForegroundColor(UIColor.white)
+                    SVProgressHUD.setBackgroundColor(UIColor(r: 0, g: 0, b: 0, alpha: 0.3))
+                    SVProgressHUD.showInfo(withStatus: "没有更多新闻啦~")
+                    return
+                }
+                self!.newsTopics += newsTopics
+                self!.tableView.reloadData()
+            }
+        })
+    }
+    
+    /// 监听 tabbar 点击
+    @objc fileprivate func tabBarSelected() {
+        if lastSelectedIndex != tabBarController!.selectedIndex {
+            tableView.mj_header.beginRefreshing()
+        }
+        lastSelectedIndex = tabBarController!.selectedIndex
+    }
 }
 
 // MARK: - Tableview DataSource
@@ -108,11 +170,63 @@ extension TopicViewController: UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if topicTitle?.category == "vide" {
+        if topicTitle!.category == "video" {
             return showVideoCell(indexPath: indexPath)
+        } else if(topicTitle!.category == "subscription"){ // 头条号
+            let cell = Bundle.main.loadNibNamed(String(describing: ToutiaohaoCell.self), owner: nil, options: nil)?.last as! ToutiaohaoCell
+            
+            return cell
+            
+        } else if(topicTitle!.category == "essay_joke"){ // 段子
+            let cell = Bundle.main.loadNibNamed(String(describing: HomeJokeCell.self), owner: nil, options: nil)?.last as! HomeJokeCell
+            cell.isJoke = true
+            cell.joke = newsTopics[indexPath.row]
+            return cell
+        } else if(topicTitle!.category == "组图"){ // 组图
+            let cell = Bundle.main.loadNibNamed(String(describing: HomeImageTableCell.self), owner: nil, options: nil)?.last as! HomeImageTableCell
+            cell.homeImage = newsTopics[indexPath.row]
+            return cell
+            
+        } else if topicTitle!.category == "image_ppmm" { // 组图
+            let cell = Bundle.main.loadNibNamed(String(describing:  HomeJokeCell.self), owner: nil, options: nil)?.last as! HomeJokeCell
+            cell.isJoke = false
+            cell.joke = newsTopics[indexPath.row]
+            return cell
+        } else{
+            
+            let weitoutiao = newsTopics[indexPath.row]
+            if weitoutiao.cell_type! == 32 { // 用户
+                let cell = Bundle.main.loadNibNamed(String(describing: HomeUserCell.self), owner: nil, options: nil)?.last as! HomeUserCell
+                cell.weitoutiao = newsTopics[indexPath.row]
+                return cell
+            }else if weitoutiao.cell_type == 50 { // 相关关注
+                let cell = Bundle.main.loadNibNamed(String(describing:  TheyAlsoUseCell.self), owner: nil, options: nil)?.last as!  TheyAlsoUseCell
+                cell.theyUse = newsTopics[indexPath.row]
+                return cell
+
+            }
+            
+            let cell = Bundle.main.loadNibNamed(String(describing: HomeTopicCell.self), owner: nil, options: nil)?.last as! HomeTopicCell
+            cell.weitoutiao = weitoutiao
+            if weitoutiao.has_video! {
+                cell.videoView.imageButton.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] in
+                    self!.getRealVideoURL(weitoutiao: weitoutiao)
+                }).disposed(by: disposeBag)
+            }
+            
+            return cell
         }
         
-        return UITableViewCell()
+    }
+    
+    /// 获取视频的真实链接跳转到视频详情控制器
+    private func getRealVideoURL(weitoutiao: WeiTouTiao) {
+        NetworkTool.parseVideoRealURL(video_id: weitoutiao.video_id!) { (realVideo) in
+//            let videoDetailVC = VideoDetailController()
+//            videoDetailVC.videoTopic = weitoutiao
+//            videoDetailVC.realVideo = realVideo
+//            self.navigationController?.pushViewController(videoDetailVC, animated: true)
+        }
     }
     
     private func showVideoCell(indexPath: IndexPath) -> VideoTopicCell {

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hbg-8O-Yxd" customClass="ThumbCollectionViewCell" customModule="TodayNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p2b-6G-rUh">
+                        <rect key="frame" x="0.0" y="0.0" width="117" height="103"/>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctd-tK-SQo">
+                        <rect key="frame" x="77" y="82" width="35" height="16"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="8L5-fj-tuA"/>
+                            <constraint firstAttribute="height" constant="16" id="Hoa-Ab-yFA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="p2b-6G-rUh" secondAttribute="bottom" id="8pg-xj-ZFX"/>
+                <constraint firstItem="p2b-6G-rUh" firstAttribute="leading" secondItem="hbg-8O-Yxd" secondAttribute="leading" id="Kkf-ou-rTk"/>
+                <constraint firstItem="p2b-6G-rUh" firstAttribute="top" secondItem="hbg-8O-Yxd" secondAttribute="top" id="OSv-FK-HIJ"/>
+                <constraint firstAttribute="trailing" secondItem="Ctd-tK-SQo" secondAttribute="trailing" constant="5" id="hZG-cx-Xth"/>
+                <constraint firstAttribute="trailing" secondItem="p2b-6G-rUh" secondAttribute="trailing" id="oDP-zA-vW5"/>
+                <constraint firstAttribute="bottom" secondItem="Ctd-tK-SQo" secondAttribute="bottom" constant="5" id="sDU-b6-M0O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="h2H-rI-W3w"/>
+            <size key="customSize" width="117" height="103"/>
+            <connections>
+                <outlet property="galleryCountLabel" destination="Ctd-tK-SQo" id="9rb-JP-YRw"/>
+                <outlet property="thumbImageView" destination="p2b-6G-rUh" id="rms-r6-THw"/>
+            </connections>
+            <point key="canvasLocation" x="-78.5" y="60.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
