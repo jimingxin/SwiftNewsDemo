@@ -19,9 +19,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     
-        
+ 
         view.backgroundColor = UIColor.globalBackgroundColor()
         // 设置状态栏的属性
         navigationController?.navigationBar.barStyle = .black

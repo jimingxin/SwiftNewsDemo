@@ -139,8 +139,21 @@ extension HomeTitleView {
 // MARK: - 监听事件
 extension HomeTitleView{
     @objc fileprivate func titleLabelClick(_ tapGes : UITapGestureRecognizer) {
-    
+        // 取出用户点击的View
+        let targetLabel = tapGes.view as! HomeTitleLabel
         
+        // 调整Title
+        adjustTitleLabel(targetIndex: targetLabel.tag)
+        
+        // 调整BottomLine
+        UIView.animate(withDuration: 0.25) {
+            self.bottomLine.width = targetLabel.width
+            self.bottomLine.centerX = targetLabel.centerX
+        }
+        
+        
+        // 通知代理
+        delegate?.titleView(self, targetIndex: currentIndex)
     }
     
     fileprivate func adjustTitleLabel(targetIndex : Int) {

@@ -34,6 +34,9 @@ class TopicViewController: UIViewController {
         
         setupUI()
         
+        if self.topicTitle?.category == "subscription" {
+            tableView.tableHeaderView = toutiaohaoHeaderView
+        }
     
         /// 设置上拉和下拉刷新
         setRefresh()
@@ -95,7 +98,7 @@ extension TopicViewController {
     @objc fileprivate func setRefresh() {
         
         
-        let header = MJRefreshHeader {
+        let header = RefreshHeder {
             NetworkTool.loadHomeCategoryNewsFeed(category: self.topicTitle!.category!, completionHsndler: { (nowTime, newsTopics) in
                 self.tableView.mj_header.endRefreshing()
                 self.newsTopics = newsTopics
@@ -105,6 +108,7 @@ extension TopicViewController {
         
         
         header?.isAutomaticallyChangeAlpha = true
+        header?.lastUpdatedTimeLabel.isHidden = true
         tableView.mj_header = header
         tableView.mj_header.beginRefreshing()
         
@@ -219,6 +223,41 @@ extension TopicViewController: UITableViewDelegate,UITableViewDataSource{
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let weitoutiao = newsTopics[indexPath.row]
+        
+        if indexPath.row == 0 && topicTitle?.category == "" {
+            let newsDetailImageVC = NewsDetailImageController.loadStoryboard()
+            newsDetailImageVC.isSelectedFirstCell = true
+            weitoutiao.item_id = 6450240420034118157
+            weitoutiao.group_id = 6450237670911852814
+            newsDetailImageVC.weitoutiao = weitoutiao
+            present(newsDetailImageVC, animated: false, completion: nil)
+        }else {
+            if topicTitle!.category == "video" || weitoutiao.has_video! {
+                /// 获取视频的真实链接
+                getRealVideoURL(weitoutiao: weitoutiao)
+            } else if topicTitle!.category == "subscription" {
+                
+            } else if topicTitle!.category == "组图" {
+                
+            } else if topicTitle!.category == "essay_joke" {
+                
+            } else if topicTitle!.category == "image_ppmm" {
+                
+            } else if (weitoutiao.source != nil && weitoutiao.source == "悟空问答") { // 悟空问答
+//                let questionAnswerVC = QuestionAnswerController()
+//                questionAnswerVC.weitoutiao = weitoutiao
+//                questionAnswerVC.topicTitle = topicTitle
+//                navigationController?.pushViewController(questionAnswerVC, animated: true)
+            } else if (weitoutiao.has_image != nil && weitoutiao.has_image!) { // 说明有图片
+                //loadNewsDetail(weitoutiao: weitoutiao)
+            } else { // 一般的新闻
+                //loadNewsDetail(weitoutiao:  weitoutiao)
+            }
+        }
+    }
+    
     /// 获取视频的真实链接跳转到视频详情控制器
     private func getRealVideoURL(weitoutiao: WeiTouTiao) {
         NetworkTool.parseVideoRealURL(video_id: weitoutiao.video_id!) { (realVideo) in
@@ -249,6 +288,8 @@ extension TopicViewController: UITableViewDelegate,UITableViewDataSource{
         }).disposed(by: disposeBag)
         return cell
     }
+    
+    
     
     
 }
